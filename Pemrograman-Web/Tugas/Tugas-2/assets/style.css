@@ -1,0 +1,43 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+body {
+    background-color: #ccc;
+}
+
+.cv{
+    letter-spacing: 10px;
+}
+
+.cv-2{
+    letter-spacing: 5px;
+}
+
+.container{
+    padding: 0;
+    /* width: 80%; */
+    /* margin: auto;
+    padding: auto; */
+    background-color: white;
+    border-radius: 15px 0 0 0;
+}
+
+.container  img{
+    width: 100%;
+    border-radius: 15px 0 0 0;
+}
+
+.container table{
+    border-radius: 0 15px 0 0;
+}
+/* 
+.container aside{
+    width: 68%;
+    float: right;
+    padding: 10px;
+}
+
+.container aside table tr td{
+    padding: -5 15px;
+} */
