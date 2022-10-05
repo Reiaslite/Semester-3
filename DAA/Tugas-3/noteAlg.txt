@@ -1,0 +1,59 @@
+Algoritma 1 ()
+
+FUNCTION VAR f(PARAMETER n) DO
+  IF n EQUALS 0 THEN
+   RETURN 0 ENDIF
+  ELSE
+   RETURN n + f(n - 1)
+  ENDELSE
+ENDFUNCTION
+
+PRINT (VAR f(PARAMETER n))
+
+Algoritma 2 ()
+
+FUNCTION VAR f(PARAMETER n) DO
+  IF n EQUALS 0 THEN
+    RETURN 1 ENDIF
+  ELSE
+    RETURN n * f(n - 1)
+  ENDELSE
+ENDFUNCTION
+
+PRINT (VAR f(PARAMETER n))
+
+Algoritma 3 (Menampilkan hasil Fibonacci ke-n)
+
+FUNCTION VAR fib(PARAMETER n) DO
+  IF n LESS THAN 3 THEN
+    RETURN 1 ENDIF
+  ELSE
+    RETURN fib(n - 1) + fib(n - 2)
+  ENDELSE
+ENDFUNCTION
+
+PRINT (VAR fib(PARAMETER n))
+
+Algoritma 4 (Hitung angka besar ke kecil)
+
+VAR countDown = FUNCTION(PARAMETER x) DO
+  IF x LOWER THAN 0 THEN
+    RETURN
+  END IF
+  PRINT x
+  countDown(x - 1)
+ENDFUNCTION
+
+PRINT(VAR countDown(4))
+
+Algoritma 5 (Hitung angka kecil ke besar)
+
+VAR countUp = FUNCTION(PARAMETER x, max) DO
+  IF x GREATER THAN max THEN
+    RETURN
+  ENDELSE
+  PRINT x
+  countUp(x + 1, max)
+ENDFUNCTION
+
+PRINT (VAR countUp(PARAMETER x, max))
