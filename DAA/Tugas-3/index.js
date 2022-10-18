@@ -32,23 +32,23 @@ function fib(n) {
 // console.log(fib(20));
 
 //COUNTDOWN REKURSIF
-let countDown = function (x) {
+function countDown(x) {
   if (x < 0) {
     return;
   }
   console.log(x);
   countDown(x - 1);
-};
+}
 
 // console.log(countDown(5));
 
 // COUNTUP REKURSIF
-let countUp = function (x, max) {
+function countUp(x, max) {
   if (x > max) {
     return;
   }
   console.log(x);
   countUp(x + 1, max);
-};
+}
 
 // console.log(countUp(1, 10));
