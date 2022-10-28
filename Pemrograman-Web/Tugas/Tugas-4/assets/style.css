@@ -14,14 +14,9 @@ body {
   height: 8vw;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
 .flex {
-  min-height: 90vh;
+  min-height: 84.7vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -30,16 +25,13 @@ body {
   /* margin-bottom: 50px; */
 }
 
-main {
-  margin-top: 100px;
-}
-
 .container h1 {
   font-weight: bolder;
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
+  left: 0;
   bottom: 0;
   width: 100%;
   height: 50px;
@@ -47,4 +39,9 @@ footer {
   color: #fff;
   text-align: center;
   line-height: 50px;
+}
+
+.wisata > a {
+  text-decoration: none;
+  color: #333;
 }
