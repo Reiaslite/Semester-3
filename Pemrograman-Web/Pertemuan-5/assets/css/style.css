@@ -39,19 +39,25 @@ nav ul {
   list-style-type: none;
 }
 
-section {
-  width: 800px;
-  margin: auto;
-  padding: auto;
-  margin-top: 50px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: white;
+#main-kolaborasi img {
+  max-height: 50px;
+  max-width: 150px;
 }
 
-section .lorem {
-  text-align: justify;
-  padding: 10px;
+#main-kolaborasi a {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  word-spacing: 20px;
+}
+
+h2.main-judul::after {
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+  border-bottom: 10px solid #ffc300;
+  width: 100px;
+  border-radius: 100px;
+  content: "";
 }
 
 footer {
