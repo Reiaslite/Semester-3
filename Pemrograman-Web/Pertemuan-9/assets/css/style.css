@@ -8,6 +8,10 @@ body {
   height: 2000px;
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
 .navbar-dark {
   background-color: #0058ab !important;
 }

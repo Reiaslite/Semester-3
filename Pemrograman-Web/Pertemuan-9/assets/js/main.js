@@ -6,8 +6,9 @@ $(function () {
       $nav.removeClass("navbar-dark");
       $nav.addClass("navbar-light");
     } else {
-      $nav.removeClass("scrolled")
-      $nav.addClass("addClass")
-      $nav.removeClass("navbar-light"); $nav.
-      $nav.removeClass("navbar-light")
-}); 
+      $nav.removeClass("scrolled");
+      $nav.addClass("navbar-dark");
+      $nav.removeClass("navbar-light");
+    }
+  });
+});
