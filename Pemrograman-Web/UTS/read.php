@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Read Data</title>
+    <title>Tampilkan Data</title>
     <style>
         table, th, td {
             border: 1px solid black;
@@ -32,6 +32,9 @@
     </style>
 </head>
 <body>
+    <h1>Data Mahasiswa</h1>
+    <hr>
+    <br>
     <table>
         <tr>
             <th>ID</th>
@@ -68,6 +71,7 @@
         ?>
         
     </table>
+    <br>
     <a href="index.php">Tambah Data</a>
 </body>
 </html>
