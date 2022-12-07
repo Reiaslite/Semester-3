@@ -67,11 +67,15 @@
     ?>
     <?php
     if($arr > 0){
-        while($rows = $arr){
-            echo $rows;
-        }
-    }
-    ?>
+        foreach ($arr = $arrs){?>
+
+    <table>
+        <tr>
+            <td><?= $arrs ?></td>
+        </tr>
+    </table>
+
+    <?php } } ?>
 
 </body>
 </html>
