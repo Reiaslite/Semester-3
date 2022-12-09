@@ -65,17 +65,9 @@
     
     $arr = bubble_sort($arr);
     ?>
-    <?php
-    if($arr > 0){
-        foreach ($arr = $arrs){?>
-
-    <table>
-        <tr>
-            <td><?= $arrs ?></td>
-        </tr>
-    </table>
-
-    <?php } } ?>
-
+    <?php 
+    while($row = mysqli_fetch)
+    
+    ?>
 </body>
 </html>
