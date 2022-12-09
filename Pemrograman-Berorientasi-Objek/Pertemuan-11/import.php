@@ -4,15 +4,15 @@ require_once('./dosen.php');
 require_once('./tendik.php');
 
 $obj = [
-    "nama" => "Rai Tilosava D",
-    "nip" => "2312315213213",
-    "tempat_lahir" => "12-06-2003",
-    "tanggal_lahir" => "Karawang",
-    "email" => "rai@gmail.com",
-    "nomor_hp" => "018203812521",
+    "nama" => "Reynaldi gm tampubolon",
+    "nip" => "21416255201135",
+    "tempat_lahir" => "17-08-2003",
+    "tanggal_lahir" => "mandoge",
+    "email" => "naldi@gmail.com",
+    "nomor_hp" => "081234563421",
     "jumlah_gaji" => 600000,
-    "homebase" => "test123",
-    "departmen" => "123213123"
+    "homebase" => "fuckkklid",
+    "departmen" => "12345676"
 ];
 
 $pegawai1 = new pegawaiParent\pegawai($obj);
