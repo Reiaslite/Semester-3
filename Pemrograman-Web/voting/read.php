@@ -64,18 +64,20 @@
     }
     
     $arr = bubble_sort($arr);
+    print_r($arr);
     ?>
-    <?php
-    if($arr > 0){
-        foreach ($arr = $arrs){?>
 
+
+    <h3>Data Terurut</h3>
     <table>
+    <?php
+    foreach ($arr as $arrs){?>
         <tr>
-            <td><?= $arrs ?></td>
+            <td><?= $arrs; ?></td>
         </tr>
     </table>
 
-    <?php } } ?>
+    <?php } ?>
 
 </body>
 </html>

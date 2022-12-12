@@ -23,16 +23,16 @@
         return $arr;
     }
 
-    print("Before sorting");
-    print_r($arr);
-    echo "<br/>";
+    // print("Before sorting");
+    // print_r($arr);
+    // echo "<br/>";
 
     $arr = bubble_sort($arr);
-    print("After sorting by using bubble sort");
-    print_r($arr);
-    echo "<br/>";
+    // print("After sorting by using bubble sort");
+    // print_r($arr);
+    // echo "<br/>";
 
-    foreach ($arr as $arrs) {
-        echo $arrs;
-    }
+    // foreach ($arr as $arrs) {
+    //     echo $arrs;
+    // }
 ?>
