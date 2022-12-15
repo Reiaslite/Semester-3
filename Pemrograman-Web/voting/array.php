@@ -18,7 +18,7 @@
     //     while($row = mysqli_fetch_assoc($query)){
     //         array_push($arr, $row['jumlah_vote']);
     //     }
-    // }
+    // } S
 
     function bubble_sort($arr) {
         $size = count($arr)-1;
