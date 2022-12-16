@@ -15,6 +15,7 @@
 <body>
     <?php
         require 'conn.php';
+        require 'array.php';
         $sql = "SELECT * FROM tes_array";
         $query = mysqli_query($conn, $sql);
     ?>
@@ -38,37 +39,29 @@
             }
         }
         ?>
+        
+
     </table>
     <hr>
+    <table>
+        <h2>Data Vote (Disorting)</h2>
+        <tr>
+            <td>ID</td>
+            <td>Nama</td>
+            <td>Jumlah Vote</td>
+        </tr>
+        <?php
+            foreach ($arr as $arrs){
+                $sorted = $arrs['jumlah_vote'];
+                $query2 = mysqli_query($conn, "SELECT * FROM tes_array WHERE jumlah_vote = '$sorted'");
+                while($baris = mysqli_fetch_assoc($query2)){ ?>
+                     <tr>
+                         <td><?= $baris['id']; ?></td>
+                         <td><?= $baris['nama']; ?></td>
+                         <td><?= $baris['jumlah_vote']; ?></td>
+                     </tr>
+        <?php } }?>
+    </table>
 
-    <?php 
-    $arr = array();
-    if (mysqli_num_rows($query) > 0){
-        while($row = mysqli_fetch_assoc($query)){
-            array_push($arr, $row['jumlah_vote']);
-        }
-    }
-
-    function bubble_sort($arr) {
-        $size = count($arr)-1;
-        for ($i=0; $i<$size; $i++) {
-            for ($j=0; $j<$size-$i; $j++) {
-                $k = $j+1;
-                if ($arr[$k] < $arr[$j]) {
-                    // Swap elements at indices: $j, $k
-                    list($arr[$j], $arr[$k]) = array($arr[$k], $arr[$j]);
-                }
-            }
-        }
-        return $arr;
-    }
-    
-    $arr = bubble_sort($arr);
-    print_r($arr);
-    ?>
-    <?php 
-    while($row = mysqli_fetch)
-    
-    ?>
 </body>
 </html>
