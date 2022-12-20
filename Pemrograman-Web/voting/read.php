@@ -50,17 +50,17 @@
             <td>Nama</td>
             <td>Jumlah Vote</td>
         </tr>
-        <?php
-            foreach ($arr as $arrs){
-                $sorted = $arrs['jumlah_vote'];
-                $query2 = mysqli_query($conn, "SELECT * FROM tes_array WHERE jumlah_vote = '$sorted'");
-                while($baris = mysqli_fetch_assoc($query2)){ ?>
-                     <tr>
-                         <td><?= $baris['id']; ?></td>
-                         <td><?= $baris['nama']; ?></td>
-                         <td><?= $baris['jumlah_vote']; ?></td>
-                     </tr>
-        <?php } }?>
+<?php
+    foreach ($arr as $arrs){
+        $sorted = $arrs['jumlah_vote'];
+        $query2 = mysqli_query($conn, "SELECT * FROM tes_array WHERE jumlah_vote = '$sorted'");
+        while($baris = mysqli_fetch_assoc($query2)){ ?>
+        <tr>
+            <td><?= $baris['id']; ?></td>
+            <td><?= $baris['nama']; ?></td>
+            <td><?= $baris['jumlah_vote']; ?></td>
+        </tr>
+<?php } }?>
     </table>
 
 </body>
